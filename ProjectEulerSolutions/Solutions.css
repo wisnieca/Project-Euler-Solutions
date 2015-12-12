@@ -1,3 +1,109 @@
-﻿body
-{
+﻿body {
+    font-family: 'Lato', sans-serif;
+    color: #403e3f;
+    background: #656565;
+    margin: 0;
+    font-size: 14px;
 }
+
+div#PageHeader {
+    font-size: 30px;
+    position: absolute;
+    background: #403e3f;
+    color: #f2f2f2;
+    height: 45px;
+    padding-left: 10px;
+    line-height: 45px;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+    div#PageHeader h1 {
+        display: block;
+        font-size: 30px;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+        font-weight: bold;
+    }
+
+div#MainContent {
+    margin-top: 50px;
+    width: 900px;
+    max-width: 900px;
+    margin: 45px auto 0 auto;
+    background: #f2f2f2;
+    border-radius: 0 0 4px 4px;
+    padding: 10px 0 0 0;
+}
+
+div#Navigation {
+    text-align: center;
+}
+
+span.navItem {
+    background: #E6A209;
+    color: white;
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 1px 0 rgba(0,0,0,1);
+    -moz-box-shadow: 0 0 1px 0 rgba(0,0,0,1);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,1);
+    cursor: pointer;
+    -webkit-transition: ease-in-out all .2s;
+    -moz-transition: ease-in-out all .2s;
+    -o-transition: ease-in-out all .2s;
+    transition: ease-in-out all .2s;
+}
+
+    span.navItem.current,
+    span.navItem:hover {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: #E65B09;
+        -webkit-transition: ease-in-out all .2s;
+        -moz-transition: ease-in-out all .2s;
+        -o-transition: ease-in-out all .2s;
+        transition: ease-in-out all .2s;
+    }
+
+div#ProblemSection {
+    padding: 10px;
+}
+
+div.problem {
+    text-align: center;
+}
+
+div.problemTitle {
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+div.code {
+    width: 600px;
+    margin: auto;
+    font-family: Consolas;
+}
+
+div#Footer {
+    text-align: center;
+    right: 0;
+    left: 0;
+    background: #403e3f;
+    color: #f2f2f2;
+    padding: 30px;
+    border-radius: 0 0 4px 4px;
+}
+
+    div#Footer a {
+        color: #fff;
+    }

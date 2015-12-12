@@ -3,9 +3,50 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta name="description" content="Project Euler Problems" />
+    <link rel="stylesheet" media="all" type="text/css" href="Solutions.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="Solutions.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cody Wisniewski - Project Euler Problems</title>
 </head>
 <body>
-
+    <div id="PageHeader"><h1>Project Euler Problems</h1></div>
+    <div id="MainContent">
+        <div id="Navigation">
+            <span class="navItem nav1 current">1</span>
+            <span class="navItem nav2">2</span>
+            <span class="navItem nav3">3</span>
+            <span class="navItem nav4">4</span>
+            <span class="navItem nav5">5</span>
+            <span class="navItem nav6">6</span>
+            <span class="navItem nav7">7</span>
+            <span class="navItem nav8">8</span>
+            <span class="navItem nav9">9</span>
+            <span class="navItem nav1">10</span>
+        </div>
+        <div id="ProblemSection">
+            <div class="problem problem1">
+                <div class="problemTitle">Multiples of 3 and 5</div>
+                <div class="problemDescription">
+                    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+                    <br />
+                    Find the sum of all the multiples of 3 or 5 below 1000.
+                </div>
+            </div>
+            <div class="code code1">
+                <pre class="prettyprint">
+                var total = 0;
+                for (var i = 0; i < 1000; i++) {
+                    if (i % 3 == 0 || i % 5 == 0) total += i;
+                }
+                return total;
+                </pre>
+            </div>
+        </div>
+        <div id="Footer">All of these code examples are my own and all problems are taken from <a href="https://projecteuler.net/archives" target="_blank">https://projecteuler.net/archives</a></div>
+    </div>
 </body>
 </html>
